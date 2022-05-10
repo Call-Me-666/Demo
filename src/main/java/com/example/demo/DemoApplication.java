@@ -16,5 +16,4 @@ public class DemoApplication {
     public RestTemplate restTemplate(){
         return new RestTemplate();
     }
-
 }

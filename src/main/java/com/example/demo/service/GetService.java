@@ -42,10 +42,10 @@ public class GetService {
                     System.out.println("开始抓取adsbexchange");
                     getData2();
                 });
-//                thread1.start();
-                thread2.start();
+                thread1.start();
+//                thread2.start();
                 try {
-                    Thread.sleep(20*1000);
+                    Thread.sleep(10*1000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -90,7 +90,7 @@ public class GetService {
         map.add("accept","*/*");
         map.add("accept-encoding","gzip, deflate, br");
         map.add("accept-language","zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,zh-TW;q=0.5");
-        map.add("cookie","adsbx_sid=1645175661021_czpqehn420l; _ga=GA1.2.1974913475.1645002865; _gid=GA1.2.1447878367.1645002865; __gads=ID=4141ccc124b6f560-22a550c9a6d000ae:T=1645002866:S=ALNI_MZJF6PimJVaTLPhEk5JJ6Kz5uga7A; cto_bundle=p3WVv183NFh1NjV6NnAlMkYlMkZOb1Y3SjIxdjZVcDMlMkI3MXg4M1pLZTNJdkw0SnFTcUc0dHYlMkYlMkJPa3F0WXJlREp5QyUyQnozYlFQT3ZlZkRKeUltOXNIR2dVM1VSJTJGeVZLa3duYUtNbDJETENUREt5elA0VjV1QmNZNlR3S0lMVmpONERoNDlCaExDRlFwRiUyRm1ZTVJNRUx0YnVTRmNoSUtnJTNEJTNE;");
+        map.add("cookie","adsbx_sid=1645187603227_dl9144qbi1v; _ga=GA1.2.1967682560.1645014804; _gid=GA1.2.1624720220.1645014804; _gat_gtag_UA_69114603_1=1; __gads=ID=753ed832aabd7235-2277efdea6d000f8:T=1645014807:S=ALNI_MZDIoJDeTO27iIkXRkO4BEddLfaKg; cto_bundle=w4Z_jV9PVlJnRyUyRnZtb2VSODJiVDBsWXlrYVRZcyUyQmIlMkZsJTJCUk1TQzVpbyUyRnB3MzlDa2tiRE9aRHA4WGxrRHlkUTcxdlBTWmRSNkF2JTJGJTJCRlQ3NDVmVkgyNEZzTEVQNkN0andRenNuQWZBVSUyRkN0YXFHRno4YUJlT3hmb2hqJTJCQ3ZpT2JRY0UzZ29iSEtVbzM5QiUyRk1RNlR2S3NVaDVrdyUzRCUzRA");
 //        map.add("cookie",cookie);
         map.add("if-none-match","\"620cc7a2-486\"");
         map.add("referer","https://globe.adsbexchange.com/");
